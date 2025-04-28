@@ -1,3 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
 background-color: rgb(248, 139, 199);
 font {
@@ -9,17 +14,34 @@ h1 {text-align: center;}
 header {
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     background: #fff;
-    position: fixed;
-    width: 100%;
-    top: 0;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
    }
-   
-   header, nav ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem;
-   }
-   
-   nav ul li {
-    margin-left: 1rem;
-   }
+
+header ing {
+    width: 50px;
+    height: 50px;
+}
+
+nav{
+    background-color: #ad4192;
+    padding: 10px;
+    text-align:center;
+}
+
+nav a{
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #d19ec4;
+}
+
+main{
+    padding: 20px;
+}
