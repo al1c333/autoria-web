@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+}
+
+.inicio img {
+  width: 50px;
+}
+
+header {
+  background-image: url("https://i.pinimg.com/736x/af/6f/8d/af6f8d2df51e3c14375d812e73fb22c3.jpg");
+  color: rgb(201, 99, 150);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+header img {
+  width: 150px;
+  border-radius: 10px;
+}
+header h1 {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.docinhos, .texto {
+display: inline-block;
+vertical-align: middle;
+}
+
+.icon img {
+  width: 150px;
+  margin-left: 20px;
+  height: auto;
+}
+
+.texto {
+  margin-left: 50px;
+}
+
+.formacao, .habilidades, .fairy {
+display: inline-block;
+vertical-align: middle;
+align-items: center;
+}
+
+.formacao{
+  margin-left: 35px;
+}
+
+.fairy img{
+  width: 150px;
+  margin-left: 180px;
+}
+
+  a {
+    color: #6e1a49;
+    text-decoration: none;
+    transition: color 0.3s, text-decoration 0.3s;
+  }
+
+  a:hover {
+    color: #c07aa1;
+    text-decoration: underline;
+  }
+
+    .gifzinho img {
+  width: 130px;
+  margin-left: 50px;
+  margin-right: 30px;
+  margin-top: 0px;
+    }
+
+
+    .comoachar, .gifzinho{
+      display: inline-block;
+      vertical-align: middle;
+      margin-top: 50px;
+    }
+
+.habilidades {
+  margin-left: 60px;
+}
+.achar{
+  margin-left: 50px;
+}
+.achar, .contato{
+  display: inline-block;
+  vertical-align: middle;
+}
+.contato {
+  margin-left: 30px;
+}
+
+main {
+  padding: 50px;
+  margin-inline: 0px;
+}
+
+section {
+  background-color: #f8c9e3;
+  border: 2px dotted #ff6ba4;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  flex: 1;
+}
+
+
+    .acharContato, .contato {
+      display: flex;
+      gap: 20px;
+    }
+
+    .acharContato{
+    }
+
+section h2 {
+  color: #df4f8b;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-image: url("https://i.pinimg.com/736x/af/6f/8d/af6f8d2df51e3c14375d812e73fb22c3.jpg");
+  color: rgb(201, 99, 150);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-align: center;
+  padding: 15px;
+}
+
+.contato {
+  display: flex;
+  flex-direction: column;
+  align-items: center;     /* Centraliza o h2 e o formulário */
+  gap: 20px;               /* Espaço entre o h2 e o form */
+}
+
+.contato form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  max-width: 400px; }
+
+.comoacharContato {
+  display: flex;
+  gap: 10px;
+}
+form button:hover {
+  background-color: #97003f;
+}
