@@ -1,0 +1,16 @@
+nav {
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-image: url(https://i.pinimg.com/1200x/a2/18/9c/a2189c560f162651c94cdb22fe897c9b.jpg);
+}
+
+footer {
+    background-color: #fab3e5;
+}
+
+.carrosel1 section {
+width: 10rem;
+}

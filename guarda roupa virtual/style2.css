@@ -1,0 +1,19 @@
+nav {
+    font-family: 'Times New Roman', Times, serif
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+footer {
+    background-color: #fab3e5;
+}
+
+
+      .carousel-inner img {
+    max-height: 240px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
