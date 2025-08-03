@@ -1,26 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Look-it: seu guarda-roupa virtual</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Look-it: seu guarda-roupa virtual</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style2.css">
-  </head>
+<script>
+  // Ativa automaticamente o toast quando a página carrega
+  document.addEventListener('DOMContentLoaded', function () {
+    const toastEl = document.getElementById('toastLucky');
+    const toast = new bootstrap.Toast(toastEl, { delay: 4000 }); // 4s
+    toast.show();
+  });
+</script>
+
+</head>
 <body>
 
     <nav class="navbar navbar-light" style="background-color: #fab3e5;">
   <div class="container-fluid">
-    <a class="navbar-brand" id="marca">Look-it.com .ᐟ</a>
+    <a class="navbar-brand" id="marca"> <h2>Look-it.com .ᐟ ♡</h2></a>
     <form class="d-flex">
-      <a class="btn btn-primary" href="guardaroupa.html" role="button">Voltar</a>
+      <a class="btn btn-custom" href="guardaroupa.html" role="button">Voltar</a>
     </form>
   </div>
 </nav>
 
 <main class="container my-4">
 <h2 class="text-center mb-4">౨ৎ Monte o seu Look</h2>
-<div id="carouseltop" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<main class="container my-4">
+  <div class="d-grid gap-6 col-5 mx-auto">
+<button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Ajuda
+</button>
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Ajuda</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Seta ">" : permite que você escolha a peça seguinte<br>
+        Seta "<" : permite que você escolha a peça anterior<br><br>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-custom" data-bs-dismiss="modal">Ok</button>
+      </div>
+    </div>
+  </div>
+</div>
+  </div>
+</main>
+
+<main class="container px-4"></main>
+<div id="carouseltop" class="carousel carousel-dark slide w-75 mx-auto" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="https://i.pinimg.com/736x/b1/7d/2a/b17d2a8ac9ce5edd5550edf8ef1416b6.jpg" class="d-block w-100" alt="...">
@@ -45,7 +81,7 @@
   </button>
 </div>
 
-<div id="carouselbottom" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div id="carouselbottom" class="carousel carousel-dark slide w-75 mx-auto" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="https://i.pinimg.com/1200x/74/26/f1/7426f100c78fce7200e604a782fe1f1e.jpg" class="d-block w-100" alt="...">
@@ -70,7 +106,7 @@
   </button>
 </div>
 
-<div id="carouselshoes" class="carousel carousel-dark slide" data-bs-ride="carousel">
+<div id="carouselshoes" class="carousel carousel-dark slide w-75 mx-auto" data-bs-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
       <img src="https://i.pinimg.com/736x/14/26/51/142651c541bdab280f81fa3af04a2d29.jpg" class="d-block w-100" alt="...">
@@ -100,6 +136,18 @@
     <footer class="text-black text-center py-2 mt-auto">
     <p>Look-it &copy; 2025</p>
   </footer>
+  <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 11">
+  <div id="toastLucky" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+    <div class="toast-header">
+      <img src="https://i.pinimg.com/1200x/3e/c6/0e/3ec60e0c8288a1a94103b2c94622d866.jpg" class="rounded me-2" alt="..." width="40">
+      <strong class="me-auto">Gatinha Lucky diz:</strong>
+      <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+    <div class="toast-body">
+      Não esqueça de tirar um print da sua tela e salvar o visual para usar depois!
+    </div>
+  </div>
+</div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js" integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO" crossorigin="anonymous"></script>
 </body>
 </html>
