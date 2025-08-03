@@ -1,26 +1,23 @@
 nav {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif
 }
+
 body {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-image: url(https://i.pinimg.com/736x/23/69/ed/2369ed2286fdec592e8df2e0cd5c20c2.jpg);
+    font-family: 'Times New Roman', Times, serif;
+    background-color: white;
 }
+
 footer {
     background-color: #fab3e5;
 }
+      .carousel-inner img {
+    max-height: 240px;
+    width: auto;
+    margin: 0 auto;
+    object-fit: contain;
+  }
 
-
-
-  body, .card-title {
-      font-family: 'Poppins', sans-serif;
-    }
-
-    .navbar-brand {
-      font-family: 'Dancing Script', cursive;
-      font-weight: 600;
-    }
-
-    .btn-custom {
+      .btn-custom {
       background-color: #f8a4d8;
       color: rgb(0, 0, 0);
       border: none;
@@ -34,4 +31,13 @@ footer {
     .btn-custom:hover {
       background-color: #d94fa3;
       color: white;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
+.navbar-brand {
+      font-family: 'Dancing Script', cursive;
+      font-weight: 600;
     }
